@@ -12,9 +12,7 @@ class EvalCodeAPIView(generics.GenericAPIView):
     def post(self, request, *args, **kwargs):
         #serializer = self.serializer_class(data = request.data)
         #serializer.is_valid(raise_exception=True)
-        print(request.data)
         code = request.data['code']
-        print(code)
         res = StringIO()
         verbose = False
 
