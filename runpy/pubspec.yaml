@@ -34,8 +34,8 @@ dependencies:
   flutter_bloc: ^8.0.0
   http: ^0.13.4
   reactive_forms: ^10.6.5
-  rich_code_editor: 
-    git: https://github.com/zefhemel/rich_code_editor
+    #  rich_code_editor: 
+    #    git: https://github.com/zefhemel/rich_code_editor
 
 dev_dependencies:
   flutter_lints: ^1.0.0
