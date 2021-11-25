@@ -16,9 +16,16 @@ class MyApp extends StatelessWidget {
     return BlocProvider(
       create: (context) => RunBloc(),
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'RunPy',
         theme: ThemeData(
           primarySwatch: Colors.blue,
+          textTheme: const TextTheme(
+            bodyText1: TextStyle(color: Colors.white),
+            bodyText2: TextStyle(color: Colors.white),
+            caption: TextStyle(color: Colors.white),
+            subtitle1: TextStyle(color: Colors.white),
+            headline1: TextStyle(color: Colors.white),
+          )
         ),
         home: EditorPage(),
       ),

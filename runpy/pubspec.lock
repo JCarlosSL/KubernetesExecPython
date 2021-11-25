@@ -43,6 +43,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.0"
+  code_editor:
+    dependency: "direct main"
+    description:
+      name: code_editor
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.3.1"
   collection:
     dependency: transitive
     description:
@@ -76,6 +83,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "8.0.0"
+  flutter_highlight:
+    dependency: transitive
+    description:
+      name: flutter_highlight
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.7.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -88,6 +102,20 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  font_awesome_flutter:
+    dependency: transitive
+    description:
+      name: font_awesome_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "9.2.0"
+  highlight:
+    dependency: transitive
+    description:
+      name: highlight
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.7.0"
   http:
     dependency: "direct main"
     description:
@@ -158,6 +186,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "10.6.5"
+  rich_code_editor:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: "92f64b570184147119b14be9e439be75bd4c5433"
+      url: "https://github.com/zefhemel/rich_code_editor"
+    source: git
+    version: "1.0.5"
   sky_engine:
     dependency: transitive
     description: flutter
