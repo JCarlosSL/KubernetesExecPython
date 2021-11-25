@@ -186,15 +186,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "10.6.5"
-  rich_code_editor:
-    dependency: "direct main"
-    description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "92f64b570184147119b14be9e439be75bd4c5433"
-      url: "https://github.com/zefhemel/rich_code_editor"
-    source: git
-    version: "1.0.5"
   sky_engine:
     dependency: transitive
     description: flutter
