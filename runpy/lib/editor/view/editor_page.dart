@@ -37,6 +37,7 @@ class EditorPage extends StatelessWidget {
       styleOptions: EditorModelStyleOptions(
         fontSize: 13,
         editorColor: Global.primary,
+        toolbarOptions: const ToolbarOptions(),
       ),
     );
     RichCodeEditingController? _rec;
@@ -78,16 +79,16 @@ class EditorPage extends StatelessWidget {
                         onSubmit: (_, code) {
                           print('#############');
                           print(code);
-                          // BlocProvider.of<RunBloc>(context).add(
-                          //   PressRunEvent(
-                          //     code: code ?? "print('hello')",
-                          //   ),
-                          // );
+                          BlocProvider.of<RunBloc>(context).add(
+                            PressRunEvent(
+                              code: code ?? "print('hello')",
+                            ),
+                          );
                         },
                         textEditingController: myController,
                       ),
                     ),
-                    SizedBox(height: 300, child: DemoCodeEditor()),
+                    // SizedBox(height: 300, child: DemoCodeEditor()),
                     // Container(
                     //   height: 300.0,
                     //   margin: EdgeInsets.all(24.0),
@@ -119,6 +120,7 @@ class EditorPage extends StatelessWidget {
                           return Column(
                             children: [
                               const CircularProgressIndicator(),
+                              const SizedBox(height: 5),
                               ElevatedButton(
                                 onPressed: () {
                                   BlocProvider.of<RunBloc>(context).add(
@@ -130,18 +132,19 @@ class EditorPage extends StatelessWidget {
                             ],
                           );
                         }
-                        return ElevatedButton(
-                          onPressed: () {
-                            print(myController.text);
-                            // BlocProvider.of<RunBloc>(context).add(
-                            //   PressRunEvent(
-                            //     // code: formGroup.control(formName).value,
-                            //     // code: myController.text,
-                            //   ),
-                            // );
-                          },
-                          child: const Text('Run'),
-                        );
+                        return const SizedBox();
+                        // ElevatedButton(
+                        //   onPressed: () {
+                        //     print(myController.text);
+                        //     // BlocProvider.of<RunBloc>(context).add(
+                        //     //   PressRunEvent(
+                        //     //     // code: formGroup.control(formName).value,
+                        //     //     // code: myController.text,
+                        //     //   ),
+                        //     // );
+                        //   },
+                        //   child: const Text('Run'),
+                        // );
                       },
                     ),
                     const SizedBox(height: 10),
